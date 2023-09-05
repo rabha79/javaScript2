@@ -73,3 +73,30 @@ var arrOlder = arr.filter(function(item) {
   return item >=4 ;
 })
 console.log(arrOlder);
+// search task
+// object.assign
+/**
+ * هي خاصيه تستخدم لنسخ الخصائص من كائن واحد او اكثر من كائن 
+ بالقيم الجديده ويعيد الكائن الناتج(target)ودمجها في كائن واحد ويحدث
+ */
+ const target = {
+     name: 'Rabha',
+     age:21
+}
+ const source = {
+    age: 100, 
+    city: 'New York' 
+}
+ Object.assign(target, source);
+ console.log(target); 
+// Array.sort()
+/**
+ * يتم استخدامها لترتيب عناصر المصفوفه ترتيبا ابجديا على حسب اول حرف  
+ * (string)وفي حالة الارقام يتم ترتيبها ترتيبا تصاعديا ولكن بيوجد فيها اخطاء بسبب انها  بتعتبرهم
+ */
+const fruits = ['dog', 'car', 'book', 'apple'];
+fruits.sort();
+console.log(fruits);
+const numbers = [5, 25, 3, 1, 100];
+numbers.sort();
+console.log(numbers);
